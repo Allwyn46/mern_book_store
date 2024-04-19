@@ -58,6 +58,14 @@ async function run() {
             res.send(result);
         });
 
+        // GET SINGLE BOOK
+        app.get('/single-book/:id', async (req, res) => {
+            const id = req.params.id;
+            const filter = { _id: new ObjectId(id) };
+            const result = await bookCollections.findOne(filter);
+            res.send(result);
+        });
+
         // UPDATE A ALREADY EXISTING BOOK IN THE DATABASE
         app.patch('/book/:id', async (req, res) => {
             const id = req.params.id;

@@ -7,6 +7,7 @@ const Banner = () => {
                 {/* LEFT SIDE */}
                 <div className='md:w-1/2 space-y-7 h-full'>
                     <h3 className='text-5xl font-bold'>Buy and Sell your Books</h3>
+                    <h4 className='text-5xl font-bold text-blue-600'>For the Best Price</h4>
                     <p className='md:w-4/5'>
                         We're more than just a bookstore; we're a community hub for literary enthusiasts. Our shelves are brimming with a diverse range of books, from timeless classics to contemporary bestsellers. We believe in the transformative power of stories and aim to foster a love for reading in all our visitors.
                     </p>
@@ -20,7 +21,7 @@ const Banner = () => {
 
                 {/* RIGHT SIDE */}
                 <div>
-                    <h3>right side</h3>
+                    <img src="/src/assets/images/banner-right2.png" alt="right image" />
                 </div>
             </div>
         </div>
