@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BookCard from '../Components/BookCard'
 
-const FavouriteBooks = () => {
+const BestSellers = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
@@ -14,4 +14,4 @@ const FavouriteBooks = () => {
     )
 }
 
-export default FavouriteBooks
+export default BestSellers
