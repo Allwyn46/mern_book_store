@@ -59,7 +59,7 @@ async function run() {
         });
 
         // GET SINGLE BOOK
-        app.get('/single-book/:id', async (req, res) => {
+        app.get('/view-book/:id', async (req, res) => {
             const id = req.params.id;
             const filter = { _id: new ObjectId(id) };
             const result = await bookCollections.findOne(filter);
